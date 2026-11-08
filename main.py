@@ -1,4 +1,5 @@
 from classes.book_class import Book
+from classes.library_class import Library
 
 def main():
     books = [
@@ -22,6 +23,10 @@ def main():
         print(book, "| available:", book.is_available())
     
     print("Books in the library:", Book.total_books)
+
+    library1 = Library()
+    library1.add_book(books[0])
+    print (library1.available_books())
 
 if __name__ == "__main__":
     main()
