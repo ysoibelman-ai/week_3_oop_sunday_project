@@ -2,9 +2,9 @@ class Book():
     total_books = 0
 
     def __init__(self,name,author,copies):
-    
         if copies < 1:
             raise ValueError  ("copies must have at least 1")
+        
         self.name = name
         self.author = author
         self.copies = copies
@@ -31,3 +31,5 @@ class Book():
             return True
         else:
             return False
+
+print ()
